@@ -4,26 +4,22 @@ box-sizing: border-box;
 position: relative;
 display: flex;
 justify-content: center;
-/* width: 1920px;
-height: 1080px;
-left: 177px;
-top: 128px; */
-background: #FFFFFF;
-border: 1px solid #21A2EB;
+/* background: #FFFFFF; */
+/* border: 1px solid #21A2EB; */
 border-radius: 2px;
 }
 
-/* Group 52 */
+/* 로그인화면 컨텐츠 */
 .Login-content{
 box-sizing: border-box;
-border: 1px solid red;
+/* border: 1px solid red; */
 position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
 width: 550px;
 height: 590px;
-padding-top: 8rem;
+padding-top: 4rem;
 padding-bottom: 8rem;
 /* left: 726px;
 top: 145px; */
@@ -59,27 +55,53 @@ top: 145px; */
     width: 100%;
 }
 
-#logo{
-    border: 1px solid #21A2EB;
-    width: calc(50% - 20px);
+
+
+
+/* 또는 좌우 라인*/
+.line {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    align-items: center;
+    color: #858282;#D9D9D9
+    font-size: 15px;
+    margin: 20px 0px;
+}
+
+.line::before,.line::after {
+    width: 200px;
+    content: "";
+    flex-grow: 1;
+    background: #D9D9D9;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
 }
 
 
-/* 함께 하면 즐거운 모꼬지에 오신 것을 환영합니다! */
-.Login-content>h1{
-border: 1px solid #21A2EB;
-width: auto;
-/* height: 103.8px; */
-left: calc(50% - 469px/2 + 0.5px);
-top: calc(50% - 103.8px/2 - 220.33px);
-font-family: 'Noto Sans KR';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 52px;
-text-align: center;
 
-color: #000000;
+/* 함께 하면 즐거운 모꼬지에 오신 것을 환영합니다! */
+.Login-content{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.Login-content>h1{
+    /* border: 1px solid #21A2EB; */
+    width: auto;
+    /* height: 103.8px; */
+    left: calc(50% - 469px/2 + 0.5px);
+    top: calc(50% - 103.8px/2 - 220.33px);
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+
+    color: #000000;
 }
 
 /* id-box */
@@ -106,215 +128,42 @@ border-radius: 10px;
 border: 0;
 }
 
-
-/* 아이디 찾기 | 비밀번호 찾기 */
-
-position: absolute;
-width: 170px;
-height: 19.96px;
-left: 883px;
-top: 555px;
-
-font-family: 'Noto Sans KR';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(0, 0, 0, 0.5);
-
-
-
-/* 회원가입 */
-
-position: absolute;
-width: 170px;
-height: 19.96px;
-left: 876px;
-top: 600px;
-
-font-family: 'Noto Sans KR';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(0, 0, 0, 0.5);
-
-.line{
-    
+.login-btn{
+    box-sizing: border-box;
+    position: relative;
+    width: 360px;
+    height: 50px;
+    background: #F0E3CE;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 20px;
+    color: #3d3d3d;
+    font-size: large;
+    font-weight: 800;
 }
 
-.line::before{
-
+.login-btn:hover{
+    background-color: #F48E8E;
+    color: white;
 }
+
+
 
 /* 카카오 로그인 */
+.select-login{
 
-position: absolute;
-width: 300px;
-height: 44.72px;
-left: calc(50% - 300px/2 + 2px);
-top: calc(50% - 44.72px/2 + 171.36px);
+    width: 300px;
+    height: 44.72px;
+    left: calc(50% - 300px/2 + 2px);
+    top: calc(50% - 44.72px/2 + 171.36px);
+    background: url(kakao_login_large_wide.png);
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
-background: url(kakao_login_large_wide.png);
-filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+.select-login>button{
+    border-style: none;
+}
 
-
-/* 로고 */
-
-position: absolute;
-width: 250px;
-height: 76.98px;
-left: calc(50% - 250px/2 + 1px);
-top: 145px;
-
-
-
-/* Line 1 */
-
-box-sizing: border-box;
-
-position: absolute;
-width: 228.72px;
-height: 0px;
-left: calc(50% - 228.72px/2 + 11.64px);
-top: calc(50% - 0px/2 - 353.94px);
-
-border: 1px solid #000000;
-
-
-/* Rectangle 2 */
-
-position: absolute;
-width: 79.79px;
-height: 76.98px;
-left: calc(50% - 79.79px/2 + 50.65px);
-top: calc(50% - 76.98px/2 - 356.51px);
-
-background: #70C9A0;
-border-radius: 50px;
-
-
-/* Rectangle 7 */
-
-position: absolute;
-width: 79.79px;
-height: 76.98px;
-left: calc(50% - 79.79px/2 - 14.07px);
-top: calc(50% - 76.98px/2 - 356.51px);
-
-background: #9BCFFF;
-border-radius: 50px;
-
-
-/* Rectangle 3 */
-
-position: absolute;
-width: 79.79px;
-height: 76.98px;
-left: calc(50% - 79.79px/2 - 84.11px);
-top: calc(50% - 76.98px/2 - 356.51px);
-
-background: #F0E3CE;
-border-radius: 50px;
-
-
-/* 모 */
-
-position: absolute;
-width: 40.78px;
-height: 56.45px;
-left: calc(50% - 40.78px/2 - 71.69px);
-top: calc(50% - 56.45px/2 - 356.51px);
-
-font-family: 'Noticia Text';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 55px;
-
-color: #FFFFFF;
-
-
-
-/* 꼬 */
-
-position: absolute;
-width: 40.78px;
-height: 56.45px;
-left: calc(50% - 40.78px/2 - 2.55px);
-top: calc(50% - 56.45px/2 - 356.51px);
-
-font-family: 'Noticia Text';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 55px;
-
-color: #FFFFFF;
-
-
-
-/* 지 */
-
-position: absolute;
-width: 40.78px;
-height: 56.45px;
-left: calc(50% - 40.78px/2 + 63.94px);
-top: calc(50% - 56.45px/2 - 356.51px);
-
-font-family: 'Noticia Text';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 55px;
-
-color: #FFFFFF;
-
-
-
-/* 또는 */
-
-position: absolute;
-width: 26px;
-height: 18.96px;
-left: calc(50% - 26px/2 + 3px);
-top: calc(50% - 18.96px/2 + 114.48px);
-
-font-family: 'Noticia Text';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-
-color: rgba(0, 0, 0, 0.4);
-
-
-
-/* Line 2 */
-
-position: absolute;
-width: 150px;
-height: 0px;
-left: calc(50% - 150px/2 - 104px);
-top: calc(50% - 0px/2 + 119.98px);
-
-border: 1px solid rgba(0, 0, 0, 0.3);
-
-
-/* Line 3 */
-
-position: absolute;
-width: 150px;
-height: 0px;
-left: calc(50% - 150px/2 + 107px);
-top: calc(50% - 0px/2 + 119.98px);
-
-border: 1px solid rgba(0, 0, 0, 0.3);
+.select-login:hover{
+    transform: scale(1.2);
+}
