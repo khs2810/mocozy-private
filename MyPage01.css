@@ -4,6 +4,7 @@
 
 /* 마이페이지 전체 */
 .MyPage-body{
+    box-sizing: border-box;
     border: 1px solid blue;
     position: relative;
     width: 1250px;
@@ -147,4 +148,8 @@ width: 905px;
 height: 100%;
 border-radius: 15px;
 padding: 20px;
+}
+
+hr{
+    margin: 0;
 }
