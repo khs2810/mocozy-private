@@ -172,9 +172,7 @@ hr{
 }
   
 .club-content{
-    width: 125px;
     display: flex;
-    flex-direction: column;
     margin: 0px 20px;
 }
 .club-img img{
@@ -184,10 +182,9 @@ hr{
 .club-title{
     box-sizing: border-box;
     display: inline-block;
-    width: 125px;
+    width: 100%;
     padding: 10px;
     margin: 0px;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }

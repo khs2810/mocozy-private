@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPage - 마이페이지</title>
+    <title>MyPage - 내 소셜링</title>
 
-    <link rel="stylesheet" href="./MyPage01.css" />
+    <link rel="stylesheet" href="./social.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <script src="MyPage.js"></script>
@@ -14,6 +14,8 @@
 <body>
     <div class="MyPage-body">
         <div class="mypage-main">
+            <!-- 유저 프로필 섹션 -->
+
             <div class="user-profile">
                 <div class="box">
                     <div>
@@ -45,7 +47,7 @@
                 </div>
             </div>
                 
-            
+            <!-- 메뉴 네비 -->
             <div class="mypage-navi">
                 <nav>
                     <ul id="main_menu">
@@ -92,98 +94,35 @@
             </div>
         </div>
         
+        <!-- 컨텐츠 내용 -->
         <div class="main-content">
-            <h1>마이페이지</h1>
-            <hr>
-
-            <div class="main-object">
-                <div class="content-title">
-                    <h4>내 최근 모임</h4>
-                </div>
-                <div class="club-content">
-                    <div class="club-img">
-                        <img src="./img/image 18.png" alt="">
-                    </div>
-                    <div class="wrap">
-                        <p class="club-title">♥블랙라이어♥:: with.하이볼 무제한🍺</p>
-                    </div>
-                </div>
-                <div class="club-content">
-                    <div class="club-img">
-                        <img src="./img/image 19.png" alt="">
-                    </div>
-                    <div class="wrap">
-                        <p class="club-title">밥을 먹는 사람들</p>
-                    </div>
-                </div>
-                <div class="club-content">
-                    <div class="club-img">
-                        <img src="./img/image 22.png" alt="">
-                    </div>
-                    <div class="wrap">
-                        <p class="club-title">선착순 10분!! 상품은</p>
-                    </div>
-                </div>
-                <div class="club-content">
-                    <div class="club-img">
-                        <img src="./img/image 21.png" alt="">
-                    </div>
-                    <div class="wrap">
-                        <p class="club-title">리액트 때려부셔버리겠어 으아아아아아</p>
-                    </div>
+            <div class="title">
+                <h1>소셜링 관리</h1>
+                <h3>내가 만든 소셜링</h3>
+                <div class="binbox"></div>
+                <div class="title-select">
+                    <select name="" id="">
+                        <option value="">진행중</option>
+                        <option value="">종료됨</option>
+                    </select>
                 </div>
             </div>
             <hr>
 
-            <div>
-                <div class="main-object">
-                    <div class="content-title">
-                        <h4>찜</h4>
-                    </div>
-                    <div class="club-content">
-                        <div class="club-img">
-                            <img src="./img/image 18.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <p class="club-title">♥블랙라이어♥:: with.하이볼 무제한🍺</p>
-                        </div>
-                    </div>
-                    <div class="club-content">
-                        <div class="club-img">
-                            <img src="./img/image 19.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <p class="club-title">밥을 먹는 사람들</p>
-                        </div>
-                    </div>
-                    <div class="club-content">
-                        <div class="club-img">
-                            <img src="./img/image 22.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <p class="club-title">선착순 10분!! 상품은</p>
-                        </div>
-                    </div>
-                    <div class="club-content">
-                        <div class="club-img">
-                            <img src="./img/image 21.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <p class="club-title">리액트 때려부셔버리겠어 으아아아아아</p>
-                        </div>
-                    </div>
+            <div class="club-content">
+                <div class="club-img">
+                    <img src="./img/image 22.png" alt="">
                 </div>
+                <div class="club-title">
+                    <p>선착순 10분!! 상품은....함정카드 발동!</p>
+                </div>
+                
             </div>
-            <hr>
+            
+            <div></div>
+            <div></div>
 
-            <div class="main-object">
-                <div class="content-title">
-                    <h4>포인트 이용 내역</h4>
-                </div>
-                <div class="line-chart">
-                    여긴 그래프 넣을거임
-                </div>
-            </div>
+            
         </div>
     </div>
 </body>

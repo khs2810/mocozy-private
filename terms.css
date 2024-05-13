@@ -74,3 +74,16 @@
     background-color: #70C9A0;
     color: white;
 }
+
+img{
+    width: 150px;
+}
+.detail-terms{
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+pre{
+    width: 100%;
+    white-space: pre-wrap;
+}
