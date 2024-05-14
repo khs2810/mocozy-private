@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage - 참여 소셜링</title>
+
+    <link rel="stylesheet" href="./social.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="MyPage.js"></script>
+
+</head>
+<body>
+    <div class="MyPage-body">
+        <div class="mypage-main">
+            <!-- 유저 프로필 섹션 -->
+
+            <div class="user-profile">
+                <div class="box">
+                    <div>
+                        <!-- 프로필사진 -->
+                        <div class="box1" style="background: #BDBDBD;">
+                            <img class="profile" src="./img/profile.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <!-- 닉네임 및 계정이메일 -->
+                        <div class="account">
+                            <p>떡꼬치대마왕 님</p>
+                            mocozygood@gmail.com
+                        </div>
+
+                        <!-- 포인트 -->
+                        <div class="account point">
+                            100,000pt
+                        </div>
+                    </div>
+                </div>
+                <!-- 매너점수 -->
+                <div class="manner">
+                    <img src="./img/로고-떡떡떡.png" href="" alt="">
+                    <p>매너점수</p>
+                    <div class="gauge">
+                        <progress id="progress" value="36.5" min="0" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- 메뉴 네비 -->
+            <div class="mypage-navi">
+                <nav>
+                    <ul id="main_menu">
+                        <li><a href="./MyPage01.html">마이페이지</a></li>
+                        <hr>
+
+                        <li><a href="./MyPage02.html">내 프로필</a></li>
+                        <hr>
+
+                        <li><a href="">소셜링 관리</a>
+                            <ul class="snd_menu sub_menu">
+                                <li><a href="./MySocial.html" class="snd_title">내가 만든 소셜링</a></li>
+                                <li><a href="./goSocial.html" class="snd_title">참여 중인 소셜링</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+
+                        <li><a href="" onclick="">챌린지 관리</a>
+                            <ul class="snd_menu sub_menu">
+                                <li><a href="./MyChallenge.html" class="snd_title">내가 만든 챌린지</a></li>
+                                <li><a href="./GoChallenge.html" class="snd_title">참여 중인 챌린지</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+
+                        <li><a href="">포인트</a>
+                            <ul class="snd_menu sub_menu">
+                                <li><a href="" class="snd_title">포인트 관리</a></li>
+                                <li><a href="" class="snd_title">충전 내역</a></li>
+                                <li><a href="" class="snd_title">사용 내역</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+
+                        <li><a href="">찜</a></li>
+                        <hr>
+
+                        <li><a href="">리뷰</a></li>
+                        <hr>
+
+                        <li><a href="">채팅기록</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- 컨텐츠 내용 -->
+        <div class="main-content">
+            <div class="title">
+                <h1>챌린지 관리</h1>
+                <h3>내가 만든 챌린지</h3>
+                <div class="binbox"></div>
+                <div class="title-select">
+                    <select name="" id="">
+                        <option value="">진행중</option>
+                        <option value="">종료됨</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+
+            <!-- 소셜링 목록 -->
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 18.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>♥블랙라이어♥:: with.하이볼 무제한🍺</h4>
+                    <p>새로운 사람과 만나는 설렘과 도파민 터지는 시간 속
+                        라이어를 찾아내는 블랙라이어파티에
+                        일상에서 벗어나고픈 여러분들을 초대합니다 💌</p>
+                </div>
+                <div class="status">
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 22.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>선착순 10분!! 상품은....함정카드 발동!</h4>
+                    <p>들어오지 않고는 못베길거야</p>
+                </div>
+                <div class="status">
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 21.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>리액트 때려부셔버리겠어 으아아아아아</h4>
+                    <p>리액트와 원수진 사람 여기여기 모여라</p>
+                </div>
+                <div class="status">
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 23.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>발로 개발</h4>
+                    <p>개발... 그거슨... 전쟁같은 사랑....</p>
+                </div>
+                <div class="status">
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

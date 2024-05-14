@@ -40,7 +40,7 @@
                 </div>
                 <!-- 매너점수 -->
                 <div class="manner">
-                    <img src="./img/로고-떡떡떡.png" alt="">
+                    <img src="./img/로고-떡떡떡.png" href="" alt="">
                     <p>매너점수</p>
                     <div class="gauge">
                         <progress id="progress" value="36.5" min="0" max="100"></progress>
@@ -52,16 +52,16 @@
             <div class="mypage-navi">
                 <nav>
                     <ul id="main_menu">
-                        <li><a href="">마이페이지</a></li>
+                        <li><a href="./MyPage01.html">마이페이지</a></li>
                         <hr>
 
-                        <li><a href="">내 프로필</a></li>
+                        <li><a href="./MyPage02.html">내 프로필</a></li>
                         <hr>
 
                         <li><a href="">소셜링 관리</a>
                             <ul class="snd_menu sub_menu">
-                                <li><a href="" class="snd_title">내가 만든 소셜링</a></li>
-                                <li><a href="" class="snd_title">참여 중인 소셜링</a></li>
+                                <li><a href="./MySocial.html" class="snd_title">내가 만든 소셜링</a></li>
+                                <li><a href="./goSocial.html" class="snd_title">참여 중인 소셜링</a></li>
                             </ul>
                         </li>
                         <hr>
@@ -110,12 +110,14 @@
             </div>
             <hr>
 
-            <div class="club-content">
-                <div class="club-img">
+            <!-- 소셜링 목록 -->
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
                     <img src="./img/image 22.png" alt="">
                 </div>
-                <div class="club-title">
-                    <p>선착순 10분!! 상품은....함정카드 발동!</p>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>선착순 10분!! 상품은....함정카드 발동!</h4>
+                    <p>들어오지 않고는 못베길거야</p>
                 </div>
                 <div class="status">
                     
@@ -123,21 +125,54 @@
                             <p>모집중(18/20)</p>
                         </div>
                     
-                    
                     <div class="btn">
-                        <button>수정</button>
-                        <button>삭제</button>
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
                     </div>
-                    
-
-                    <div></div>
                 </div>
             </div>
             
-            <div></div>
-            <div></div>
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 21.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>리액트 때려부셔버리겠어 으아아아아아</h4>
+                    <p>리액트와 원수진 사람 여기여기 모여라</p>
+                </div>
+                <div class="status">
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
+                    </div>
+                </div>
+            </div>
 
-            
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 23.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>발로 개발</h4>
+                    <p>개발... 그거슨... 전쟁같은 사랑....</p>
+                </div>
+                <div class="status">
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

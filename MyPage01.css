@@ -8,7 +8,7 @@
     position: relative;
     width: 1250px;
     height: 100%;
-    left: calc(50% - 1250px/2);
+    margin: auto;
     top: 150px;
     display: flex;
     justify-content: space-between;
@@ -176,6 +176,7 @@ hr{
     display: flex;
     flex-direction: column;
     margin: 0px 20px;
+    cursor: pointer;
 }
 .club-img img{
     box-sizing: border-box;
@@ -265,3 +266,4 @@ option{
     border: 1px solid #8d8d8d;
     border-radius: 5px;
 }
+
