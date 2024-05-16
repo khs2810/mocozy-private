@@ -1,0 +1,35 @@
+.main-object{
+    height: 98px;
+}
+.box1{
+    box-shadow: 2px 2px 2px black;
+    transition-duration: 0.1s;
+}
+
+.profile>img{
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: none;
+}
+
+.box1:hover {
+    position: relative; bottom: 2px; right: 2px;
+}
+
+
+.change-btn{
+    border-style: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #F28C8C;
+    width: 144px;
+    height: 30px;
+    color: white;
+    font-weight: 800;
+}
+
+.box1:active{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: none;
+}
