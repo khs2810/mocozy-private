@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>찜 - 소셜링</title>
 
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./basic.css" />
+    <link rel="stylesheet" href="./social.css" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <script src="MyPage.js"></script>
-    <link rel="stylesheet" href="./basic.css" />
+    
+    
 
 </head>
 <body>
@@ -104,137 +103,90 @@
             </div>
         </div>
         
+        <!-- 컨텐츠 내용 -->
         <div class="main-content">
             <div class="title">
                 <h1>찜</h1>
                 <h3>소셜링</h3>
                 <div class="binbox"></div>
-                <div class="binbox"></div>
+                <div class="title-select">
+                    <select name="" id="">
+                        <option value="">소셜링</option>
+                        <option value="">챌린지</option>
+                    </select>
+                </div>
             </div>
             <hr>
-            <div class="reviewList">
-                <div class="review">
-                    <div class="leftPart">
-                        <img src="resources/clubImg1.png">
-                    </div>
-                    <div class="midPart">
-                        <div class="clubTitle">
-                            <span>♥블랙라이어♥:: with.하이볼 무제한🍺</span>
-                        </div>
-                        <div class="clubMsg">
-                            <pre>새로운 사람과 만나는 설렘과 도파민 터지는 시간 속
-라이어를 찾아내는 블랙라이어파티에
-일상에서 벗어나고픈 여러분들을 초대합니다 💌</pre>
-                        </div>
-                    </div>
-                    <div class="rightPart">
-                        <div class="scorePart">
-                            <img src="resources/star.png">
-                            <span class="score">4.5</span>
-                        </div>
-                        <div class="btnPart">
-                            <button type="button" class="writeBtn" data-toggle="modal" data-target="#reviewEnrollWindow">리뷰 작성</button>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="review">
-                    <div class="leftPart">
-                        <img src="resources/clubImg2.png">
+            <!-- 찜 목록 -->
+            <!-- 소셜링 목록 -->
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 18.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>♥블랙라이어♥:: with.하이볼 무제한🍺</h4>
+                    <p>새로운 사람과 만나는 설렘과 도파민 터지는 시간 속
+                        라이어를 찾아내는 블랙라이어파티에
+                        일상에서 벗어나고픈 여러분들을 초대합니다 💌</p>
+                </div>
+                <div class="status">
+                    <div class="dibs">
+                        <button class="btn" onclick="toggleAct(this)">찜하기</button>
                     </div>
-                    <div class="midPart">
-                        <div class="clubTitle">
-                            <span>선착순 10분!! 상품은....함정카드 발동!</span>
-                        </div>
-                        <div class="clubMsg">
-                            <pre>들어오지 않고는 못베길거야</pre>
-                        </div>
+                    <div class="mozip">
+                        <p>모집중(18/20)</p>
                     </div>
-                    <div class="rightPart">
-                        <div class="scorePart">
-                            <img src="resources/star.png">
-                            <span class="score">4.5</span>
-                        </div>
-                        <div class="btnPart">
-                            <button type="button" class="detailBtn" data-toggle="modal" data-target="#reviewDetailWindow">리뷰 보기</button>
-                        </div>
+                </div>
+            </div>
+
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 22.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>선착순 10분!! 상품은....함정카드 발동!</h4>
+                    <p>들어오지 않고는 못베길거야</p>
+                </div>
+                <div class="status">
+                    <div class="mozip">
+                        <p>모집중(18/20)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 21.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>리액트 때려부셔버리겠어 으아아아아아</h4>
+                    <p>리액트와 원수진 사람 여기여기 모여라</p>
+                </div>
+                <div class="status">
+                    <div class="mozip">
+                        <p>모집중(18/20)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-content container">
+                <div class="club-img" onclick="location.href='이동할 링크주소(URL)';">
+                    <img src="./img/image 23.png" alt="">
+                </div>
+                <div class="club-title" onclick="location.href='이동할 링크주소(URL)';">
+                    <h4>발로 개발</h4>
+                    <p>개발... 그거슨... 전쟁같은 사랑....</p>
+                </div>
+                <div class="status">
+                    <div class="mozip">
+                        <p>모집중(18/20)</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- The Modal -->
-    <div class="modal" id="reviewEnrollWindow">
-        <div class="modal-dialog">
-            <div class="modal-content" style="border: 4px solid black; border-bottom-right-radius: 30px;">
-            
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <h4 class="modal-title">리뷰 작성하기</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="star-rating">
-                        <input type="radio" id="5-stars" name="rating" value="5" />
-                        <label for="5-stars" class="star">&#9733;</label>
-                        <input type="radio" id="4-stars" name="rating" value="4" />
-                        <label for="4-stars" class="star">&#9733;</label>
-                        <input type="radio" id="3-stars" name="rating" value="3" />
-                        <label for="3-stars" class="star">&#9733;</label>
-                        <input type="radio" id="2-stars" name="rating" value="2" />
-                        <label for="2-stars" class="star">&#9733;</label>
-                        <input type="radio" id="1-star" name="rating" value="1" />
-                        <label for="1-star" class="star">&#9733;</label>
-                    </div>
-                    <div class="review-write">
-                        <textarea name="" id="" placeholder="리뷰를 작성하세요"></textarea>
-                    </div>
-                </div>
-                
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">리뷰 등록</button>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    
-    <!-- The Modal -->
-    <div class="modal" id="reviewDetailWindow">
-        <div class="modal-dialog">
-            <div class="modal-content" style="padding-bottom: 20px; border: 4px solid black; border-bottom-right-radius: 30px;">
-            
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <h4 class="modal-title">리뷰 보기</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="star-rating">
-                        <input type="radio" id="5-stars" name="rating" value="5" />
-                        <label for="5-stars" class="star">&#9733;</label>
-                        <input type="radio" id="4-stars" name="rating" value="4" />
-                        <label for="4-stars" class="star">&#9733;</label>
-                        <input type="radio" id="3-stars" name="rating" value="3" />
-                        <label for="3-stars" class="star">&#9733;</label>
-                        <input type="radio" id="2-stars" name="rating" value="2" />
-                        <label for="2-stars" class="star">&#9733;</label>
-                        <input type="radio" id="1-star" name="rating" value="1" />
-                        <label for="1-star" class="star">&#9733;</label>
-                    </div>
-                    <div class="review-write">
-                        <textarea name="" id="">짐이 작성한 리뷰이니라. 소중하게 생각하도록.</textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
 </body>
 </html>

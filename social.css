@@ -76,19 +76,20 @@ textarea{
     margin-top: 20px;
 }
 
-.title{
+.main-content>.title{
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
-.title>h1{
+/* .title>h1{
     width: 400px;
-}
-.title>h3{
-    width: 300px;
+} */
+.main-content>.title>h3{
+    flex: 1;
     margin: 20px;
 }
-.binbox{
-    width: 100%;
+.main-content>.binbox{
+    flex: 1;
 }
 .title-select{
     display: flex;
