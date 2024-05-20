@@ -1,6 +1,6 @@
-/* * {
-    box-sizing: border-box;
-} */
+.dibs{
+    height: 175px;
+}
   
 .club-content{
     width: 125px;
@@ -9,10 +9,17 @@
     margin: 0px 20px;
     cursor: pointer;
 }
-.club-img img{
+
+/* 모임 컨텐츠들 */
+
+.club-img>img{
     box-sizing: border-box;
     border-radius: 15px;
+    box-shadow: 2px 2px 2px #6d6d6d;
+    transition-duration: 0.1s;
+    cursor: pointer;
 }
+
 .club-title{
     box-sizing: border-box;
     display: inline-block;
@@ -23,9 +30,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.box{
-    width: 180px;
-}
+
+/* hover 모임타이틀 */
+
+
 
 .textbox{
     box-sizing: border-box;
@@ -34,6 +42,7 @@
     width: 100%;
     height: 30px;
 }
+
 
 .change>input{
     box-sizing: border-box;

@@ -1,4 +1,23 @@
-/* 마이페이지 전체 */
+*{
+    box-sizing: border-box;
+}
+
+h5{
+    font-weight: 800;
+}
+
+/* 움직이는 버튼 공통 스타일 */
+.btn-style{
+    border-style: none;
+    background: none;
+}
+button:active{
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: none;
+}
+
+    /* 마이페이지 전체 */
 .MyPage-body{
     box-sizing: border-box;
     position: relative;
@@ -20,48 +39,69 @@
 .user-profile{
     box-sizing: border-box;
     width: 330px;
-    height: 210px;
+    height: 180px;
     background-color: #D9D9D9;
     border-radius: 15px;
     padding: 3%;
 }
 
-.box{
-    box-sizing: border-box;
+.profile-box{
     display: flex;
     align-items: center;
 }
-.box1 {
-    box-sizing: border-box;
+
+/* 프로필이미지 */
+.profile-box1 {
     width: 91px;
     height: 91px; 
-    border-radius: 70%;
+    border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    transition-duration: 0.1s;
+    cursor: pointer;
 }
-.profile {
+.profile-img {
     width: 91px;
     height: 91px;
-    object-fit: cover;
+    
+    /* object-fit: cover; */
 }
-.account{
-    box-sizing: border-box;
-    padding-left: 20px;
-    line-height: 0.5em;
+.profile-box1{
+    box-shadow: 2px 2px 2px black;
+    transition-duration: 0.1s;
+    
+}
+.profile-box1:active{
+        margin-left: 2px;
+        margin-top: 2px;
+        box-shadow: none;
+        
 }
 
-.account>p {
-    font-size: larger;
-    font-weight: bolder;
+.profile>img:active{
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: none;
+    
 }
+
+/* 계정 닉네임, 이메일(id) */
+.account{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+
+/* 충전포인트 */
 .point{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
     justify-content: space-between;
     align-items: center;
 }
+
+/* 충전 버튼 */
 .point>button{
-    border-style: none;
     width: 72px;
     height: 30px;
     border-radius: 10px;
@@ -79,23 +119,25 @@ button:active{
 }
 
 
+/* 매너점수 */
 .manner{
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin: 10px 0px;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    font-weight: 800;
 }
+/* 모꼬지 로고 */
 .manner>img{
-    
     margin-right: 5px;
 }
-.manner>p{
-    
+.manner>h6{
     font-weight: bolder;
 }
 
-
+/* 매너점수 분홍 그래프 */
 #progress {
     appearance: none;
     margin-left: 10px;
@@ -108,10 +150,9 @@ button:active{
 #progress::-webkit-progress-value {
     border-radius:10px;
     background: #F08A8A;
-    /* background: -webkit-linear-gradient(to right, #93F9B9, #1D976C); */
-    /* background: linear-gradient(to right, #93F9B9, #1D976C); */
 
 }
+
 
 /* 네비 메뉴바 */
 .mypage-navi{
@@ -119,18 +160,17 @@ button:active{
 }
 
 nav{
-    /* border: 1px solid blue; */
     box-sizing: border-box;
     margin-top: 20px;
     width: 100%;
 }
 
+/* 마이페이지 메뉴리스트 스타일*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
-    /* background-color: #f1f1f1; */
     position: relative;
     height: 100%;
     overflow: auto;
@@ -142,23 +182,25 @@ li {
 }
 
 ul li a {
-display: block;
-color: #000;
-
-padding: 8px 16px;
-text-decoration: none;
-align-content: center;
-justify-content: space-between;
+    display: block;
+    color: #000;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 8px 16px;
+    text-decoration-line: none;
 }
 
 ul li a.active {
-background-color: #555;
-color: white;
+    background-color: #7a7a7a;
+    color: white;
 }
   
+ul li a:hover{
+    text-decoration-line: none;
+}
+
 ul li a:hover:not(.active) {
-background-color: #7a7a7a;
-color: white;
+    background-color: #7a7a7a;
+    color: white;
 }
 
 .snd_menu { background: #efefef; }
@@ -170,8 +212,8 @@ color: white;
 
 /* 콘텐츠영역 */
 .main-content{
-box-sizing: border-box;
-border: 2px solid #D9D9D9;
+/* box-sizing: border-box; */
+border: 1px solid #D9D9D9;
 width: 905px;
 height: 100%;
 border-radius: 15px;
@@ -179,13 +221,16 @@ padding: 20px;
 }
 
 hr{
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .content-title{
-    width: 170px;
+    width: 175px;
+    margin-right: 20px;
 }
 .main-object{
     display: flex;
     align-items: center;
     margin: 15px 0px;
 }
+
