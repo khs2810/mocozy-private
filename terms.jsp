@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,7 +8,7 @@
     <title>Mo-Cozy - 이용약관</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="./terms.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}./terms.css" />
 
 </head>
 <body class="Login_page">

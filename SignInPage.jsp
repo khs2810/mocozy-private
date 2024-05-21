@@ -1,10 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모꼬지-회원가입</title>
-    <link rel="stylesheet" href="./SignInPage.css" />
+
+    <link rel="stylesheet" href="${pageContext.request.contextPath}./SignInPage.css" />
+    
 </head>
 <body class="SignIn-Page">
     <form action="">

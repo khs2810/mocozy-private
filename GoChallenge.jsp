@@ -1,17 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>찜 - 소셜링</title>
+    <title>MyPage - 참여 중인 챌린지</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./basic.css" />
-    <link rel="stylesheet" href="./dibs.css" />
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}./basic.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}./social.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -19,12 +18,11 @@
     <!--Get your code at fontawesome.com-->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
-    <script src="MyPage.js"></script>
-    
-    
+    <script src="${pageContext.request.contextPath}/MyPage.js"></script>
 
 </head>
 <body>
+    <%@ include file="../common/header.jsp"%>
     <div class="MyPage-body">
         <!-- 마이페이지 공용 코드 -->
         <div class="mypage-main">
@@ -34,7 +32,7 @@
                     <button class="btn-style">
                         <div class="profile-box1">
                             <!-- 프로필사진 -->
-                            <img type="button" class="profile-img" src="./img/profile.jpg" alt="">
+                            <img type="button" class="profile-img" src="${pageContext.request.contextPath}/img/profile.jpg" alt="">
                         </div>
                     </button>
                     <!-- 닉네임 및 계정이메일 -->
@@ -53,7 +51,7 @@
 
                 <!-- 매너점수 -->
                 <div class="manner">
-                    <img src="./img/로고-떡떡떡.png" alt="">
+                    <img src="${pageContext.request.contextPath}/img/로고-떡떡떡.png" alt="">
                     <h6>매너점수</h6>
                     <div class="gauge">
                         <progress id="progress" value="36.5" min="0" max="100"></progress>
@@ -65,21 +63,21 @@
             <div class="mypage-navi">
                 <nav>
                     <ul id="main_menu">
-                        <li><a href="./MyPage.html">마이페이지</a></li>
+                        <li><a href="${pageContext.request.contextPath}/MyPage.jsp">마이페이지</a></li>
 
-                        <li><a href="./MyProfile.html">내 프로필</a></li>
+                        <li><a href="${pageContext.request.contextPath}/MyProfile.jsp">내 프로필</a></li>
 
                         <li><a href="">소셜링 관리</a>
                             <ul class="snd_menu sub_menu">
-                                <li><a href="./MySocial.html" class="snd_title">내가 만든 소셜링</a></li>
-                                <li><a href="./goSocial.html" class="snd_title">참여 중인 소셜링</a></li>
+                                <li><a href="${pageContext.request.contextPath}/MySocial.jsp" class="snd_title">내가 만든 소셜링</a></li>
+                                <li><a href="${pageContext.request.contextPath}/goSocial.jsp" class="snd_title">참여 중인 소셜링</a></li>
                             </ul>
                         </li>
 
                         <li><a href="" onclick="">챌린지 관리</a>
                             <ul class="snd_menu sub_menu">
-                                <li><a href="./MyChallenge.html" class="snd_title">내가 만든 챌린지</a></li>
-                                <li><a href="./GoChallenge.html" class="snd_title">참여 중인 챌린지</a></li>
+                                <li><a href="${pageContext.request.contextPath}/MyChallenge.jsp" class="snd_title">내가 만든 챌린지</a></li>
+                                <li><a href="${pageContext.request.contextPath}/GoChallenge.jsp" class="snd_title">참여 중인 챌린지</a></li>
                             </ul>
                         </li>
 
@@ -93,8 +91,8 @@
 
                         <li><a href="">찜</a>
                             <ul class="snd_menu sub_menu">
-                                <li><a href="./dibs_social.html" class="snd_title">소셜링</a></li>
-                                <li><a href="./dibs_challenge.html" class="snd_title">챌린지</a></li>
+                                <li><a href="${pageContext.request.contextPath}/dibs_social.jsp" class="snd_title">소셜링</a></li>
+                                <li><a href="${pageContext.request.contextPath}/dibs_challenge.jsp" class="snd_title">챌린지</a></li>
                             </ul>
                         </li>
 
@@ -106,15 +104,15 @@
             </div>
         </div>
         
-        <!-- 메인 컨텐츠 부 전체-->
-        <div class="main-content">
+         <!-- 메인 컨텐츠 부 전체-->
+         <div class="main-content">
             <!-- 메인컨텐츠 타이틀 -->
             <div class="title">
-                <h1>찜</h1>
-                <h3>소셜링</h3>
+                <h1>챌린지 관리</h1>
+                <h3>참여 중인 챌린지</h3>
                 
-                <!-- 셀렉버튼 -->
-                <div class="title-select">
+                 <!-- 셀렉버튼 -->
+                 <div class="title-select">
                     <select name="" id="">
                         <option value="">진행중</option>
                         <option value="">종료됨</option>
@@ -135,15 +133,15 @@
                         라이어를 찾아내는 블랙라이어파티에
                         일상에서 벗어나고픈 여러분들을 초대합니다 💌</p>
                 </div>
-
                 <div class="status">
-                    <!-- 찜 -->
-                    <div class="dibs">
-                        <!-- <button class="btn" onclick="toggleAct(this)">찜하기</button> -->
-                        <div class="club_picked"><i class="fa-regular fa-heart" style="color: red;"></i></div>
-                    </div>
-                    <div class="mozip">
-                        <p>모집중(18/20)</p>
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
                     </div>
                 </div>
             </div>
@@ -157,13 +155,14 @@
                     <p>들어오지 않고는 못베길거야</p>
                 </div>
                 <div class="status">
-                    <!-- 찜 -->
-                    <div class="dibs">
-                        <!-- <button class="btn" onclick="toggleAct(this)">찜하기</button> -->
-                        <div class="club_picked"><i class="fa-regular fa-heart" style="color: red;"></i></div>
-                    </div>
-                    <div class="mozip">
-                        <p>모집중(18/20)</p>
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
                     </div>
                 </div>
             </div>
@@ -177,13 +176,14 @@
                     <p>리액트와 원수진 사람 여기여기 모여라</p>
                 </div>
                 <div class="status">
-                    <!-- 찜 -->
-                    <div class="dibs">
-                        <!-- <button class="btn" onclick="toggleAct(this)">찜하기</button> -->
-                        <div class="club_picked"><i class="fa-regular fa-heart" style="color: red;"></i></div>
-                    </div>
-                    <div class="mozip">
-                        <p>모집중(18/20)</p>
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
                     </div>
                 </div>
             </div>
@@ -197,19 +197,18 @@
                     <p>개발... 그거슨... 전쟁같은 사랑....</p>
                 </div>
                 <div class="status">
-                    <!-- 찜 -->
-                    <div class="dibs">
-                        <!-- <button class="btn" onclick="toggleAct(this)">찜하기</button> -->
-                        <div class="club_picked"><i class="fa-regular fa-heart" style="color: red;"></i></div>
-                    </div>
-                    <div class="mozip">
-                        <p>모집중(18/20)</p>
+                    
+                        <div class="mozip">
+                            <p>모집중(18/20)</p>
+                        </div>
+                    
+                    <div class="btn">
+                        <button class="btn-style btn-color1">수정</button>
+                        <button class="btn-style btn-color2">삭제</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    
 </body>
 </html>
