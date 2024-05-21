@@ -1,3 +1,13 @@
+.content-title{
+    width: 175px;
+    margin-right: 20px;
+}
+.main-object{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
 .dibs{
     height: 175px;
 }

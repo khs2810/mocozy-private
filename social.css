@@ -1,24 +1,23 @@
-/* * {
-    box-sizing: border-box;
-} */
-
+/* 콘텐츠부 */
 .club-content{
     box-sizing: border-box;
     display: flex;
     padding: 20px 20px;
     justify-content: space-between;
 }
+/* 모임 이미지 */
 .club-img{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     width: 125px;
     height: 125px;
-    
 }
-.club-img img{
+.club-img>img{
     border-radius: 15px;
+    box-shadow: 2px 2px 2px black;
 }
+/* 모임 타이틀 */
 .club-title{
     box-sizing: border-box;
     margin: 20px;
@@ -33,17 +32,11 @@
 .club-title>p{
     font-size: small;
 }
+/* 모임 객체 선택 회색박스*/
 .box{
     width: 180px;
 }
 
-.textbox{
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #8d8d8d;
-    width: 100%;
-    height: 30px;
-}
 
 .change>input{
     box-sizing: border-box;
@@ -56,51 +49,13 @@
     margin: 30px;
 }
 
-.introduce{
-    display: flex;
-    flex-direction: row-reverse;
-}
 
-textarea{
-    resize: none;
-}
 
-.edit-user{
-    display: flex;
-    flex-direction:row;
-    justify-content: end;
-}
 
-.edit-user a{
-    margin-inline-start: 30px;
-    margin-top: 20px;
-}
-
-.main-content>.title{
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-/* .title>h1{
-    width: 400px;
-} */
-.main-content>.title>h3{
-    flex: 1;
-    margin: 20px;
-}
-.main-content>.binbox{
-    flex: 1;
-}
-.title-select{
-    display: flex;
-    align-items: flex-end;
-    margin: 20px 0px;
-}
-
+/* 컨텐츠 선택중 회색박스 */
 select{
     border: 1px solid #8d8d8d;
     border-radius: 5px;
-    width: 65px;
     height: 30px;
 }
 
@@ -132,24 +87,14 @@ option{
    margin: 0px;
 }
 
+/* 버튼 */
 .btn{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    height: 32px;
+    padding: 0px;
 }
 
-.btn-style{
-    box-sizing: border-box;
-    border-radius: 10px;
-    border-style: none;
-    width: 70px;
-    height: 30px;
-    font-size: medium;
-    font-weight: 800;
-    box-shadow: 2px 2px 2px black;
-    transition-duration: 0.1s;
-}
 .point>button{
     
     border-style: none;
@@ -167,15 +112,30 @@ button:active{
     margin-top: 5px;
     box-shadow: none;
 }
-/* .btn-style:hover{
-    border: 1px solid rgb(48, 48, 48);
-} */
 
 .btn-color1{
     background-color: #F0E3CE;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: none;
+    width: 70px;
+    height: 30px;
+    font-size: medium;
+    font-weight: 800;
+    box-shadow: 2px 2px 2px black;
+    transition-duration: 0.1s;
 }
 .btn-color2{
     background-color: #F28C8C;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: none;
+    width: 70px;
+    height: 30px;
+    font-size: medium;
+    font-weight: 800;
+    box-shadow: 2px 2px 2px black;
+    transition-duration: 0.1s;
 }
 
 .container {

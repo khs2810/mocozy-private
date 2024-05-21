@@ -1,13 +1,23 @@
+/* 내부 타이틀 */
+.content-title{
+    width: 175px;
+    margin-right: 20px;
+}
+/* 메인 콘텐츠 아이템 */
 .main-object{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
     height: 98px;
 }
 
+/* 텍스트박스(한줄 자기소개) */
 .textbox{
     border: 1px solid #d9d9d9;
     border-radius: 5px;
     padding-left: 10px;
 }
-
+/* 비번변경 버튼 */
 .change-btn{
     border-style: none;
     margin-left: 20px;

@@ -220,17 +220,19 @@ border-radius: 15px;
 padding: 20px;
 }
 
-hr{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.content-title{
-    width: 175px;
-    margin-right: 20px;
-}
-.main-object{
+/* 콘텐츠 타이틀 */
+.title {
     display: flex;
-    align-items: center;
-    margin: 15px 0px;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-
+h1{
+    margin: 0px;
+}
+.main-content>.title>h3{
+    flex: 1;
+    margin: 0px 20px;
+}
+.title .title-select {
+    margin-left: auto;
+}
